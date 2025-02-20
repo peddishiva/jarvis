@@ -1,6 +1,10 @@
 import pygame
 
+import eel
+
 # Playing assistant sound function
+
+@eel.expose
 def playAssistantSound():
     pygame.mixer.init()
     pygame.mixer.music.load("www\\assets\\audio\\start_sound.mp3")

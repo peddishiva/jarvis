@@ -1,0 +1,16 @@
+#to add  files to git: git add .
+#to commit files to git: git commit -m "message"
+#to push files to git: git push
+#to pull files from git: git pull
+#to create virtual environment: python -m venv venv
+#to run file: python main.py
+#to activate virtual environment: source venv/bin/activate -> copy the path of activate and run in powershell
+#to deactivate virtual environment: deactivate
+#to install packages: pip install package_name
+#to install packages in virtual environment: pip install --user package_name
+
+
+
+#pip install --upgrade pip
+#pip install pygame
+
