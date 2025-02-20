@@ -11,6 +11,11 @@
 
 
 
+installation of pygame:
+upgrade to pip first and then install pygame. this is for safe installation
 #pip install --upgrade pip
 #pip install pygame
 
+day -3
+voice generation -
+used libraries  - pyttsx3 and sapi5
