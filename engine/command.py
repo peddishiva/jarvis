@@ -11,8 +11,8 @@ def speak(text):
     eel.DisplayMessage(text)
     engine.say(text)
     engine.runAndWait()
-
-
+    
+    
 def takecommand():
 
     r = sr.Recognizer()
@@ -42,17 +42,19 @@ def takecommand():
 @eel.expose
 def allCommands():
     
-    query = takecommand()
-    print(query)
-    
-    if "open" in query:
-        from engine.features import openCommand
-        openCommand(query)
-    elif "on youtube":
-        from engine.features import PlayYoutube
-        PlayYoutube(query)
-    
-    else:
-        print("I'm not sure what you mean")
+    try:
+        query = takecommand()
+        print(query)
+        
+        if "open" in query:
+            from engine.features import openCommand
+            openCommand(query)
+        elif "on youtube":
+            from engine.features import PlayYoutube
+            PlayYoutube(query)
+        else:
+            print("I'm not sure what you mean")
+    except:
+        print("error")
         
     eel.ShowHood()
